@@ -76,6 +76,9 @@ return {
           "viW",
           desc = "Select inner WORD",
         },
+
+        -- close current tab
+        ["q"] = { "<cmd>tabclose<cr>", desc = "Close current tab" },
       },
       t = {
         -- setting a mapping to false will disable it
