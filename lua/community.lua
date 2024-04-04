@@ -26,6 +26,6 @@ return {
   { import = "astrocommunity.pack.ansible" },
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.bash" },
-  -- { import = "astrocommunity.recipes.heirline-nvchad-statusline" },
+  { import = "astrocommunity.register.nvim-neoclip-lua" },
   -- import/override with your plugins folder
 }
