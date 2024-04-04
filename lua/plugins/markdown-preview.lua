@@ -4,7 +4,7 @@ return {
   opts = {},
   ft = { "markdown" },
   -- if markdown-preview is not working well, plz see https://github.com/iamcco/markdown-preview.nvim/issues/558 for details
-  build = "cd app && npm install",
+  build = "cd app && npm install && git restore .",
   config = function()
     vim.g.mkdp_filetypes = { "markdown" }
     vim.g.mkdp_auto_close = true
