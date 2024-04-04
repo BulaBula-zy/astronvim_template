@@ -5,5 +5,5 @@ local mode = "window"
 return {
   "FabijanZulj/blame.nvim",
   event = "User AstroGitFile",
-  keys = { { "<leader>gB", "<cmd>ToggleBlame " .. mode .. "<cr>", desc = "Toggle Git blame" } },
+  keys = { { "bl", "<cmd>ToggleBlame " .. mode .. "<cr>", desc = "Toggle Git blame" } },
 }
