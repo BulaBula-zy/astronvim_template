@@ -77,6 +77,8 @@ return {
           desc = "Select inner WORD",
         },
 
+        -- navigate to next tab
+        ["]]"] = { function() vim.cmd.tabnext() end, desc = "Navigate to next tab" },
         -- close current tab
         ["bq"] = { function() vim.cmd.tabclose() end, desc = "Close current tab" },
       },
