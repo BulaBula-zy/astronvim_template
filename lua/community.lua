@@ -9,6 +9,7 @@ return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.colorscheme.tokyonight-nvim" },
+  { import = "astrocommunity.color.transparent-nvim" },
   { import = "astrocommunity.editing-support.vim-move" },
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   { import = "astrocommunity.motion.nvim-surround" },
