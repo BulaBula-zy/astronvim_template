@@ -78,7 +78,7 @@ return {
         },
 
         -- close current tab
-        ["q"] = { "<cmd>tabclose<cr>", desc = "Close current tab" },
+        ["bq"] = { function() vim.cmd.tabclose() end, desc = "Close current tab" },
       },
       t = {
         -- setting a mapping to false will disable it
