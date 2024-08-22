@@ -4,6 +4,23 @@
 local mode = "window"
 return {
   "FabijanZulj/blame.nvim",
-  event = "User AstroGitFile",
-  keys = { { "bl", "<cmd>ToggleBlame " .. mode .. "<cr>", desc = "Toggle Git blame" } },
+  cmd = "BlameToggle",
+  opts = {},
+  dependencies = {
+    {
+      "AstroNvim/astrocore",
+      ---@type AstroCoreOpts
+      opts = {
+        mappings = {
+          n = {
+            ["bl"] = {
+              "<cmd>BlameToggle " .. mode .. "<cr>",
+              desc = "Toggle git blame",
+            },
+          },
+        },
+      },
+    },
+    { "AstroNvim/astroui", opts = { status = { winbar = { enabled = { filetype = { "blame" } } } } } },
+  },
 }
