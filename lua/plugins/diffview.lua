@@ -20,10 +20,10 @@ return {
       hooks = { diff_buf_read = function(bufnr) vim.b[bufnr].view_activated = false end },
     },
     keys = {
-      { "<leader>gs", "<cmd>DiffviewOpen<cr>", desc = "Diffview Git status" },
+      { "<leader>gv", "<cmd>DiffviewOpen<cr>", desc = "Diffview Git status" },
       {
         -- NOTE: same as `:DiffviewOpen <commit_id>`
-        "<leader>gS",
+        "<leader>gV",
         function()
           local reg1 = vim.fn.getreg '"' -- @" ""
           local reg2 = vim.fn.getreg "+" -- @+ "+
@@ -43,8 +43,8 @@ return {
         end,
         desc = "Diffview Git status (certain commit)",
       },
-      { "<leader>gl", "<cmd>DiffviewFileHistory --max-count<cr>", desc = "Diffview Git log" },
-      { "<leader>gL", "<cmd>DiffviewFileHistory % --max-count<cr>", desc = "Diffview Git log (current file)" },
+      { "<leader>gh", "<cmd>DiffviewFileHistory --max-count<cr>", desc = "Diffview Git log" },
+      { "<leader>gH", "<cmd>DiffviewFileHistory % --max-count<cr>", desc = "Diffview Git log (current file)" },
     },
   },
   {
