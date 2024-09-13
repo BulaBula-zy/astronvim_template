@@ -13,7 +13,8 @@ return {
     -- change colorscheme
     -- colorscheme = "astrodark",
     -- colorscheme = "catppuccin-frappe",
-    colorscheme = "catppuccin-mocha",
+    -- colorscheme = "catppuccin-mocha",
+    colorscheme = "catppuccin-macchiato",
     -- colorscheme = "tokyonight", -- tokyonight-storm default
 
     -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
