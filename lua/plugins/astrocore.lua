@@ -46,6 +46,12 @@ return {
       n = {
         -- second key is the lefthand side of the map
 
+        -- cursor movement shortcuts
+        ["bh"] = { "^", desc = "Move to the beginning of the line" },
+        ["el"] = { "$", desc = "Move to the end of the line" },
+        ["<C-d>"] = { "<C-d>zz", desc = "Scroll down half a screen and center the cursor" },
+        ["<C-u>"] = { "<C-u>zz", desc = "Scroll up half a screen and center the cursor" },
+
         -- navigate buffer tabs with `H` and `L`
         L = { function() require("astrocore.buffer").nav(vim.v.count1) end, desc = "Next buffer" },
         H = { function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Previous buffer" },
