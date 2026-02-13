@@ -10,6 +10,7 @@ return {
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.colorscheme.tokyonight-nvim" },
   { import = "astrocommunity.editing-support.vim-move" },
+  { import = "astrocommunity.markdown-and-latex.vimtex" },
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   { import = "astrocommunity.motion.nvim-surround" },
   { import = "astrocommunity.pack.lua" },
@@ -29,6 +30,7 @@ return {
   { import = "astrocommunity.pack.ansible" },
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.bash" },
+  -- { import = "astrocommunity.pack.sql" },
   { import = "astrocommunity.register.nvim-neoclip-lua" },
   -- import/override with your plugins folder
 }
